@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angelica Vega - Consultora y Asesora</title>
+    <style>
+        /* CSS for styling the page */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #fff;
+            padding: 2rem;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .photo-placeholder {
+            width: 150px;
+            height: 150px;
+            /* Using the new profile picture URL */
+            background-image: url('https://raw.githubusercontent.com/urielcabellovega/images/refs/heads/main/M.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin-right: 2rem;
+            border: 3px solid #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .header-text h1 {
+            margin: 0;
+            color: #0056b3;
+        }
+
+        .header-text p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .sgema-logo {
+            max-width: 180px;
+            height: auto;
+            margin-left: 1rem;
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        .section {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.08);
+            overflow: hidden; /* Clearfix for floated elements */
+        }
+
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .about-image {
+            float: right;
+            max-width: 280px;
+            margin-left: 25px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .knowledge-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .knowledge-list li {
+            background: #e7f3ff;
+            color: #0056b3;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .experience-item h3 {
+            margin: 0 0 5px 0;
+            color: #333;
+        }
+
+        .experience-item .company {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .experience-item .date {
+            font-style: italic;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .experience-item .location {
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .experience-item .description {
+            margin-top: 10px;
+            font-size: 0.95em;
+        }
+
+        .testimonial {
+            background: #f9f9f9;
+            border-left: 5px solid #0056b3;
+            padding: 20px;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        .testimonial p {
+            margin: 0;
+        }
+
+        .testimonial .author {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 10px;
+            font-style: normal;
+        }
+        
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .contact-info a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header {
+                justify-content: center;
+            }
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+            }
+            .photo-placeholder {
+                margin: 0 0 1rem 0;
+            }
+            .sgema-logo {
+                margin: 1.5rem auto 0;
+            }
+            .about-image {
+                float: none;
+                display: block;
+                max-width: 100%;
+                margin: 1rem auto;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="photo-placeholder">
+                    </div>
+                <div class="header-text">
+                    <h1>Angelica Vega</h1>
+                    <p>Consultor y asesor en SGEMA | Experto técnico en CEIMA</p>
+                </div>
+            </div>
+            <img src="https://raw.githubusercontent.com/urielcabellovega/images/refs/heads/main/sgema-removebg-preview.png" alt="Logo SGEMA" class="sgema-logo">
+        </header>
+
+        <main>
+            <section class="section">
+                <h2>Sobre Mí</h2>
+                <img src="https://cdn.pixabay.com/photo/2014/11/18/18/28/manometer-536467_1280.jpg" alt="Manómetro representando la metrología de presión" class="about-image">
+                <p>
+                    Como consultora y asesora en SGEMA durante más de 10 años, he trabajado en estrecha colaboración con empresas para implementar y mantener sistemas de gestión de calidad conforme a la norma ISO/IEC 17025:2017. Mi experiencia incluye ayudar a organizaciones a obtener y conservar acreditaciones, realizar auditorías internas y desarrollar soluciones personalizadas para la mejora continua de procesos.
+                </p>
+                <p>
+                    Con más de 25 años de experiencia en metrología, me especializo en magnitudes como presión, masa, temperatura y humedad relativa, mediciones especiales que engloban calificación de equipos en cualquiera de sus etapas, validación de procesos, entre otros. Mi compromiso es ofrecer asesoría estratégica y capacitación, seguimiento estrecho y acompañamiento en cada etapa de mis clientes para que impulsen la excelencia operativa y el cumplimiento normativo en cada proyecto que lidero.
+                </p>
+            </section>
+            
+            <section class="section contact-info">
+                <h2>Información de Contacto</h2>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/5215517301296" target="_blank">55 1730 1296</a></p>
+                <p><strong>Email:</strong> <a href="mailto:avegasebastian@gmail.com">avegasebastian@gmail.com</a></p>
+            </section>
+
+            <section class="section">
+                <h2>Conocimientos</h2>
+                <ul class="knowledge-list">
+                    <li>NMX-17025</li>
+                    <li>Control de calidad</li>
+                    <li>Normatividad</li>
+                    <li>Gestión y planeación de proyectos</li>
+                    <li>Administración y dirección de empresas</li>
+                </ul>
+            </section>
+            
+            <section class="section">
+                <h2>Experiencia Profesional</h2>
+                <div class="experience-item">
+                    <h3>Consultor y asesor</h3>
+                    <p class="company">SGEMA · Profesional independiente</p>
+                    <p class="date">junio 2014 - actualidad · 11 años 1 mes</p>
+                    <p class="location">Ciudad de México, México</p>
+                </div>
+                <div class="experience-item">
+                    <h3>GERENTE DE CALIDAD</h3>
+                    <p class="company">NUEVA AERONAUTICA PROFESIONAL, S.A. DE C.V.</p>
+                    <p class="date">junio 2014 - actualidad · 11 años 1 mes</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Experto técnico en CEIMA, PRESIÓN, MASA Y TEMPERATURA</h3>
+                    <p class="company">entidad mexicana de acreditación, a.c.</p>
+                    <p class="date">abril 2003 - actualidad · 22 años 3 meses</p>
+                    <p class="location">MEXICO, D.F</p>
+                    <p class="description">EVALUADOR COMO EXPERTO TÉCNICO EN CALIFICACIÓN DE EQUIPOS E INSTRUMENTOS DE MEDICIONES ANALÍTICAS (CEIMA), PRESIÓN, MASA Y TEMPERATURA</p>
+                </div>
+                <div class="experience-item">
+                    <h3>COORDINADORA DE CALIDAD</h3>
+                    <p class="company">CEN VAL CAL, S. DE R.L. DE C.V.</p>
+                    <p class="date">febrero 1998 - mayo 2014 · 16 años 4 meses</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Testimonio</h2>
+                <div class="testimonial">
+                    <p>"Reconozco de muchos años una profesionista y especialista muy reconocida por su capacidad tecnológica y profesional de alta calidad. Estoy seguro que le irá muy bien, pues se lo merece."</p>
+                    <p class="author">Saludos, Ing. Roberto Luis Villeda Rubín</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Angelica Vega - Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
